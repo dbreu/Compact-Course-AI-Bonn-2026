@@ -1,0 +1,9 @@
+sudo systemctl edit ollama
+
+add
+[Service]
+Environment="OLLAMA_VULKAN=1"
+Environment="OLLAMA_IGPU_ENABLE=1"
+
+sudo systemctl daemon-reload
+sudo systemctl restart ollama
