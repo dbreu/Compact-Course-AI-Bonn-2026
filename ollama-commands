@@ -1,0 +1,5 @@
+ollama pull gemma4:e4b
+ollama pull qwen2.5-coder:1.5b
+
+ollama run gemma4:e4b
+ollama ps
