@@ -1,0 +1,18 @@
+name: Lokaler AMD Coding Assistant
+version: 0.0.1
+schema: v1
+
+models:
+  - name: Local gemma 4 e4b
+    provider: ollama
+    model: gemma4:e4b
+    apiBase: http://localhost:11434
+    capabilities:
+      - tool_use
+
+  - name: Local Qwen Coder Autocomplete
+    provider: ollama
+    model: qwen2.5-coder:1.5b
+    apiBase: http://localhost:11434
+    roles:
+      - autocomplete
